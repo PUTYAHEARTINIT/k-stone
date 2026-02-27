@@ -782,9 +782,36 @@
       text-transform: uppercase;
     }
 
+    /* VIDEOS */
+    #videos {
+      background: var(--dark2);
+      padding: 120px 48px;
+    }
+    .video-grid {
+      max-width: 1400px;
+      margin: 60px auto 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .video-item {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.1);
+      transition: border-color 0.3s;
+    }
+    .video-item:hover { border-color: rgba(201,168,76,0.3); }
+    .video-item iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     /* PRESS */
     #press {
-      background: var(--dark2);
+      background: var(--dark);
       padding: 120px 48px;
     }
     .press-grid {
@@ -1010,6 +1037,7 @@
       .perf-grid { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
       .gallery-item { grid-column: span 1 !important; grid-row: span 1 !important; height: 200px; }
+      .video-grid { grid-template-columns: 1fr; }
       .press-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       #contact, #story, #gallery { padding: 80px 24px; }
@@ -1030,6 +1058,7 @@
     <ul class="nav-links">
       <li><a href="#about">Story</a></li>
       <li><a href="#music">Music</a></li>
+      <li><a href="#videos">Videos</a></li>
       <li><a href="#story">Journey</a></li>
       <li><a href="#performances">Live</a></li>
       <li><a href="#press">Press</a></li>
@@ -1347,6 +1376,33 @@
     </div>
     <p style="text-align:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.2em;color:rgba(201,168,76,0.3);text-transform:uppercase;margin-top:32px;">
       → Images will populate once photos are added
+    </p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <div class="section-header reveal" style="max-width:1400px;margin-left:auto;margin-right:auto;">
+      <div class="section-title-block">
+        <p class="section-label">Visual Content</p>
+        <h2>VIDEOS</h2>
+      </div>
+      <a href="https://youtube.com/@delamostoner" target="_blank" class="section-link">
+        YouTube Channel →
+      </a>
+    </div>
+    <div class="video-grid reveal">
+      <!-- Add specific video IDs from @delamostoner channel -->
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=UU" title="K-Stone Videos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=delamostoner" title="K-Stone Latest" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:40px;">
+      <a href="https://youtube.com/@delamostoner" target="_blank" class="btn-outline">
+        Watch More on YouTube →
+      </a>
     </p>
   </section>
 
