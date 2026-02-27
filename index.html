@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K Stone - Atlanta Rapper & Artist</title>
-<meta name="description" content="K Stone - Atlanta-based rapper, artist, and creator. Watch the latest music videos and stay connected.">
+<title>K-Stone - Kameron Walker | Atlanta Rapper & Artist</title>
+<meta name="description" content="K-Stone (Kameron Walker) - Rapper, producer, songwriter, and creative director. From Watts to Atlanta. We're Back Again.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -25,7 +25,6 @@
     overflow-x: hidden;
   }
   
-  /* Navigation */
   nav {
     position: fixed;
     top: 0;
@@ -36,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
@@ -64,11 +63,8 @@
     transition: color 0.3s;
   }
   
-  .nav-links a:hover {
-    color: var(--red);
-  }
+  .nav-links a:hover { color: var(--red); }
   
-  /* Hero */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -94,8 +90,16 @@
     font-weight: 300;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: rgba(255,255,255,0.7);
+  }
+  
+  .hero .tagline {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--red);
+    margin-bottom: 40px;
   }
   
   .cta-buttons {
@@ -137,10 +141,9 @@
     color: var(--black);
   }
   
-  /* About */
   .about {
     padding: 120px 60px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
@@ -156,27 +159,36 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
   }
   
   .about-text {
     font-size: 18px;
     line-height: 1.8;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.85);
+  }
+  
+  .about-text p {
+    margin-bottom: 24px;
+  }
+  
+  .highlight {
+    color: var(--red);
+    font-weight: 600;
   }
   
   .about-image {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: var(--light-gray);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     color: rgba(255,255,255,0.3);
+    border: 2px solid rgba(255,255,255,0.1);
   }
   
-  /* Videos */
   .videos {
     padding: 120px 60px;
     background: var(--gray);
@@ -200,6 +212,7 @@
     height: 0;
     overflow: hidden;
     background: var(--black);
+    border: 2px solid rgba(255,255,255,0.1);
   }
   
   .video-embed iframe {
@@ -209,6 +222,19 @@
     width: 100%;
     height: 100%;
     border: none;
+  }
+  
+  .video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.3);
+    font-size: 14px;
   }
   
   .youtube-channel {
@@ -235,7 +261,6 @@
     transform: translateY(-2px);
   }
   
-  /* Contact */
   .contact {
     padding: 120px 60px;
     text-align: center;
@@ -267,7 +292,6 @@
     transform: translateY(-4px);
   }
   
-  /* Footer */
   footer {
     padding: 40px 60px;
     text-align: center;
@@ -279,17 +303,17 @@
   @media (max-width: 768px) {
     nav { padding: 20px 30px; }
     .nav-links { gap: 20px; font-size: 12px; }
-    .about-content, .video-grid { grid-template-columns: 1fr; }
-    .cta-buttons { flex-direction: column; }
+    .about-content { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; width: 100%; }
     .video-grid { grid-template-columns: 1fr; }
+    .about, .videos, .contact { padding: 80px 30px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Navigation -->
 <nav>
-  <div class="logo">K STONE</div>
+  <div class="logo">K-STONE</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#videos">Videos</a></li>
@@ -297,24 +321,31 @@
   </ul>
 </nav>
 
-<!-- Hero -->
 <section class="hero">
-  <h1>K STONE</h1>
-  <p class="subtitle">Atlanta Rapper & Artist</p>
+  <h1>K-STONE</h1>
+  <p class="subtitle">Kameron Walker</p>
+  <p class="tagline">WE'RE BACK AGAIN</p>
   <div class="cta-buttons">
     <a href="#videos" class="btn btn-primary">Watch Videos</a>
     <a href="https://youtube.com/@delamostoner" target="_blank" class="btn btn-outline">Subscribe on YouTube</a>
   </div>
 </section>
 
-<!-- About -->
 <section class="about" id="about">
-  <h2 class="section-title">About K Stone</h2>
+  <h2 class="section-title">The Story</h2>
   <div class="about-content">
     <div class="about-text">
-      <p>K Stone is an Atlanta-based rapper and artist bringing authentic storytelling and raw energy to the hip-hop scene. With a unique sound and uncompromising vision, K Stone represents the next generation of Southern hip-hop.</p>
-      <br>
-      <p>From the streets of Atlanta to the studio, every track tells a story. Real music. Real message. No compromises.</p>
+      <p>Kameron Walker, known as <span class="highlight">K-Stone</span>, is a multi-disciplinary artist from Watts, California — rapper, producer, songwriter, creative director, and actor.</p>
+      
+      <p>From the streets of Watts to Carson, raised in a two-parent household alongside his brother Karon ("Beak"), athletics shaped his early years. Football. Track. Championships at the Coliseum. State Meet qualifications. But music was calling.</p>
+      
+      <p>Instead of collegiate athletics, Kameron chose music and entertainment. His breakthrough came through <span class="highlight">Hearts of Stone</span>, a collaborative group with his brother, producing the viral single "Work On You" featuring Davion Farris in 2013-2014.</p>
+      
+      <p>He joined <span class="highlight">Non-Affiliates</span>, opening for major artists. His 2016 solo project <span class="highlight">"Off The Blocc 1994"</span> generated serious momentum. Then came "Hood B****" featuring Allie Kay — his real introduction as an established artist.</p>
+      
+      <p>Now based in Atlanta, K-Stone continues to evolve across multiple creative disciplines, bringing authentic storytelling and raw energy to everything he touches.</p>
+      
+      <p><em>"Peace to me is success. Self Awareness. Being Happy."</em></p>
     </div>
     <div class="about-image">
       [Artist Photo Here]
@@ -322,39 +353,30 @@
   </div>
 </section>
 
-<!-- Videos -->
 <section class="videos" id="videos">
   <div class="videos-container">
-    <h2 class="section-title">Latest Videos</h2>
+    <h2 class="section-title">Videos</h2>
     
     <div class="video-grid">
       <div class="video-embed">
-        <!-- YouTube video embed will go here -->
-        <div style="display:flex;align-items:center;justify-content:center;height:100%;color:rgba(255,255,255,0.3);">
-          Video 1
-        </div>
+        <div class="video-placeholder">Video 1 - Add YouTube embed URL</div>
       </div>
       <div class="video-embed">
-        <div style="display:flex;align-items:center;justify-content:center;height:100%;color:rgba(255,255,255,0.3);">
-          Video 2
-        </div>
+        <div class="video-placeholder">Video 2 - Add YouTube embed URL</div>
       </div>
       <div class="video-embed">
-        <div style="display:flex;align-items:center;justify-content:center;height:100%;color:rgba(255,255,255,0.3);">
-          Video 3
-        </div>
+        <div class="video-placeholder">Video 3 - Add YouTube embed URL</div>
       </div>
     </div>
     
     <div class="youtube-channel">
       <a href="https://youtube.com/@delamostoner" target="_blank">
-        <span>▶</span> SUBSCRIBE ON YOUTUBE
+        <span>▶</span> SUBSCRIBE ON YOUTUBE - @delamostoner
       </a>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
 <section class="contact" id="contact">
   <h2 class="section-title">Connect</h2>
   <div class="social-links">
@@ -364,9 +386,8 @@
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
-  <p>© 2025 K Stone. All Rights Reserved.</p>
+  <p>© 2025 K-Stone (Kameron Walker). All Rights Reserved.</p>
 </footer>
 
 </body>
